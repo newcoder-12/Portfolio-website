@@ -1,0 +1,49 @@
+/* Spacing */
+.mt-2 {
+  margin-top: 20px;
+}
+.mt-3 {
+  margin-top: 35px;
+}
+
+/* Flex helpers */
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text-center {
+  text-align: center;
+}
+
+/* Buttons */
+.btn {
+  padding: 12px 22px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  margin: 8px;
+}
+.btn-primary {
+  background: #00eaff;
+  color: #000;
+}
+.btn-primary:hover {
+  box-shadow: 0 0 10px #00eaff;
+}
+.btn-secondary {
+  border: 1px solid #00eaff;
+  color: #00eaff;
+}
+.btn-secondary:hover {
+  box-shadow: 0 0 10px #ff4d5a;
+}
+
+/* Glassmorphism utility */
+.glass {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+}
