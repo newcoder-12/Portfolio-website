@@ -7,7 +7,7 @@ hamburger.addEventListener("click", () => {
 });
 
 // ---------------- TYPING EFFECT ----------------
-const text = "I do code and build things";
+const text = "I build clean and responsive websites...";
 let i = 0;
 
 function typingEffect() {
@@ -18,22 +18,6 @@ function typingEffect() {
     }
 }
 typingEffect();
-
-
-// ---------------- SCROLL REVEAL ----------------
-const reveals = document.querySelectorAll(".reveal");
-
-function scrollReveal() {
-    reveals.forEach((el)=>{
-        const top = el.getBoundingClientRect().top;
-        if(top < window.innerHeight - 120){
-            el.classList.add("show");
-        }
-    })
-}
-window.addEventListener("scroll", scrollReveal);
-scrollReveal();
-
 
 // ---------------- BACK TO TOP BUTTON ----------------
 const backBtn = document.getElementById("backToTop");

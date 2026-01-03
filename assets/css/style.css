@@ -66,6 +66,10 @@ body {
   list-style: none;
 }
 
+.nav-links.show {
+  display: flex;
+}
+
 .nav-links a {
   color: #c0b1b1;
   text-decoration: none;
@@ -286,27 +290,11 @@ nav a:hover {
   cursor: grabbing;
 }
 
-/* PROJECTS */
-
-.card {
-  background: #141414;
-  padding: 25px;
-  border-radius: 12px;
-  text-align: center;
-  font-weight: 500;
-  transition: 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
-}
-
 /* FOOTER */
 footer {
   text-align: center;
   padding: 40px;
-  background: #9b4819;
+  background: #0f0f0f;
 }
 
 footer a {
@@ -352,7 +340,7 @@ footer a {
     padding: 20px;
     position: absolute;
     top: 70px;
-    right: 20px;
+    right: 30px;
   }
 
   .hamburger {
@@ -369,5 +357,22 @@ footer a {
   }
   #backToTop:hover {
     box-shadow: 0 0 15px #00eaff;
+  }
+}
+
+@media (max-width: 420px) {
+  .hero-title {
+    font-size: 40px;
+  }
+
+  .subtitle {
+    width: 90%;
+    font-size: 16px;
+  }
+
+  .btn-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
   }
 }
